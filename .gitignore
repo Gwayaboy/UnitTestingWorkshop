@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/UnitTestingWorkshop/v16/.suo
+/WritingTestableCode/SmartHomeControllerTests/obj
+/WritingTestableCode/SmartHomeExample/.vs/SmartHomeExample/v16
+/WritingTestableCode/SmartHomeExample/bin/Debug/netcoreapp2.2
+/WritingTestableCode/SmartHomeExample/obj
+/WritingTestableCode/SmartHomeExample.Tests/bin/Debug/netcoreapp2.2
+/WritingTestableCode/SmartHomeExample.Tests/obj
+/.vs
