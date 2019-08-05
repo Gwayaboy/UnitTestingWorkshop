@@ -27,6 +27,8 @@ namespace SmartHomeExample
          *   real world example makes a real headache to decipher what's going on
          *  
          * 
+         * It's ok to have static on calculation.
+         * 
          */
         public TimeOfDay GetTimeOfDay()
         {
