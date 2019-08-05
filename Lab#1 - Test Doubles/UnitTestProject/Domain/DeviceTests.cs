@@ -26,8 +26,11 @@ namespace UnitTestProject.Domain
         }
 
         [TestMethod]
+        [DataRow(2, TimeOfDay.Night)]
         [DataRow(6,TimeOfDay.Morning)]
-        [DataRow(6,TimeOfDay.Morning)]
+        [DataRow(13,TimeOfDay.Afternoon)]
+        [DataRow(19, TimeOfDay.Evening)]
+
         public void GetTimeOfDay_ForGivenDateTime_ReturnsCorrespondingSectionOfDay(int hour, TimeOfDay expected)
         {
             //Arrange
