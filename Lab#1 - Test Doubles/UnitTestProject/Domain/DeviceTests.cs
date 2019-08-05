@@ -1,9 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
 using SmartHomeExample;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 using TestDoubles.Domain;
 
 namespace UnitTestProject.Domain
@@ -41,6 +40,26 @@ namespace UnitTestProject.Domain
 
             //Assert
             Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void UpdateFirmware_FailingToSetDeviceOnline_DoesNotUpdateFirmWare()
+        {
+            //Arrange
+            var factoryFirware = new Firmware();
+            var sut = Substitute.ForPartsOf<Device>(Guid.NewGuid(), "SomeDevice", factoryFirware, true);
+            var newFirmware = new Firmware();
+
+            sut
+              .When(x => x.SetOnLine(true))
+              .Do(x => throw new Exception("Could not turn device on"));
+
+            //Act
+            sut.UpdateFirmware(newFirmware, DateTime.Now);
+
+
+            //Assert
+            Assert.AreEqual(sut.CurrentFirmware, factoryFirware);
         }
     }
 }
