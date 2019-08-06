@@ -19,3 +19,7 @@
 /Lab#1 - Test Doubles/After/bin/Debug/netstandard2.0
 /Lab#1 - Test Doubles/After/obj
 /Lab#1 - Test Doubles/UnitTestProject/bin/Debug/netcoreapp2.2
+/TestingLegacyCode/UnitTestingLegacyTechniques/LegacyCode/.vs/LegacyCode/v16/Server/sqlite3
+/TestingLegacyCode/UnitTestingLegacyTechniques/LegacyCode/LegacyCode/obj
+/TestingLegacyCode/UnitTestingLegacyTechniques/LegacyCode/LegacyCode.Tests/obj
+/TestingLegacyCode/UnitTestingLegacyWithMSFakes/Before/EnterpriseLogger/obj

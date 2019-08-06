@@ -1,0 +1,13 @@
+﻿<Window x:Class="Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="700" Width="1000" Loaded="Window_Loaded">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" >
+            <TextBox x:Name="txtClock"></TextBox>
+        </StackPanel>
+       <Canvas x:Name="Map">
+            <!--<Ellipse x:Name="Blip1" Fill="Red" Width="10" Height="15" Canvas.Top="50" Canvas.Left="20"></Ellipse>-->
+        </Canvas>
+    </DockPanel>
+</Window>

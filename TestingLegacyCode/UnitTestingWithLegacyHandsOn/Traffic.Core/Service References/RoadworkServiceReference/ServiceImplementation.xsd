@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:31119/ServiceImplementation.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.Core.Models" />
+  <xs:import schemaLocation="http://localhost:31119/ServiceImplementation.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.RoadworkService" />
+  <xs:element name="RetrieveCurrent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.Core.Models" minOccurs="0" name="locations" nillable="true" type="q1:ArrayOfBlock" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveCurrentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.RoadworkService" minOccurs="0" name="RetrieveCurrentResult" nillable="true" type="q2:ArrayOfImpediment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

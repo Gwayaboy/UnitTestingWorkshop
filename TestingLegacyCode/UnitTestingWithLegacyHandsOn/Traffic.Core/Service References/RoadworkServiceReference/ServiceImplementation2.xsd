@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.Core.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.Core.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfBlock">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Block" nillable="true" type="tns:Block" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBlock" nillable="true" type="tns:ArrayOfBlock" />
+  <xs:complexType name="Block">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocationCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetDirection" type="tns:Direction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Block" nillable="true" type="tns:Block" />
+  <xs:simpleType name="Direction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="North" />
+      <xs:enumeration value="South" />
+      <xs:enumeration value="East" />
+      <xs:enumeration value="West" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Direction" nillable="true" type="tns:Direction" />
+</xs:schema>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Microsoft.ALMRangers.FakesGuide.ComplexDependencies.Traffic.RoadworkService.RoadworkService" CodeBehind="ServiceImplementation.svc.cs" %>

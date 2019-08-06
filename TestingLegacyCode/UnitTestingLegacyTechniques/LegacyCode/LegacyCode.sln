@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyCode", "LegacyCode\LegacyCode.csproj", "{E2C581A1-CB8C-488F-BC5B-AB6B3FBB0DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyCode.Tests", "LegacyCode.Tests\LegacyCode.Tests.csproj", "{BAE97DED-E65B-4263-97A2-FF93FF5AE49D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2C581A1-CB8C-488F-BC5B-AB6B3FBB0DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C581A1-CB8C-488F-BC5B-AB6B3FBB0DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C581A1-CB8C-488F-BC5B-AB6B3FBB0DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C581A1-CB8C-488F-BC5B-AB6B3FBB0DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE97DED-E65B-4263-97A2-FF93FF5AE49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE97DED-E65B-4263-97A2-FF93FF5AE49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE97DED-E65B-4263-97A2-FF93FF5AE49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE97DED-E65B-4263-97A2-FF93FF5AE49D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
