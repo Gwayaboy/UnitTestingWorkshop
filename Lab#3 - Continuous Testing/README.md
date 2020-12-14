@@ -244,7 +244,7 @@ In this task, you will learn about code coverage features that make it easier to
     
  ###   Task 4: Code Clone Analysis
     
-    In this exercise, you will learn about the Code Clone analysis feature that looks for semantically similar code using a heuristic search technique, rather than simply searching for exact matches.
+In this exercise, you will learn about the Code Clone analysis feature that looks for semantically similar code using a heuristic search technique, rather than simply searching for exact matches.
     
 16.  Select **Analyze | Analyze Solution for Code Clones** from the main menu in Visual Studio.
     
