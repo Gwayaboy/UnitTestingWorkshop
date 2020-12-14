@@ -10,7 +10,6 @@
     using NUnit.Framework;
     using NUnit.Mocks;
 
-    [TestFixture]
     public class ServiceTicketsControllerTest
     {
         DynamicMock mockCustomerRepo;
@@ -20,8 +19,7 @@
         DynamicMock mockScheduleItemRepo;
         ServiceTicketsController controller;
 
-        [SetUp]
-        public void SetupController()
+        public  ServiceTicketsControllerTest()
         {
             mockCustomerRepo = new DynamicMock(typeof(ICustomerRepository));
             mockEmployeeRepo = new DynamicMock(typeof(IEmployeeRepository));
@@ -41,8 +39,6 @@
         [Xunit.Fact]
         public void ScheduleActionReturnsValidViewModel()
         {
-            this.SetupController();
-
             // Arrange
             mockServiceTicketRepo.SetReturnValue("FindIncluding", new ServiceTicket { ID = 1 });
             mockEmployeeRepo.SetReturnValue("Find", new Employee { ID = 1 });
@@ -64,8 +60,6 @@
         [Xunit.Fact]
         public void ScheduleActionCorrectlyUpdatesRepositories()
         {
-            this.SetupController();
-
             // Arrange
             var scheduleItems = new List<ScheduleItem>();
             scheduleItems.Add(new ScheduleItem { ServiceTicketID = 1 });
