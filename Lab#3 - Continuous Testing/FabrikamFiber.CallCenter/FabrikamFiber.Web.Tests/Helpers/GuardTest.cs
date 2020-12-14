@@ -5,8 +5,8 @@
     using System.Linq;
     using System.Text;
     using FabrikamFiber.Web.Helpers;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using NUnit.Framework;
+    using Guard = Web.Helpers.Guard;
 
     [TestFixture]
     public class GuardTest
