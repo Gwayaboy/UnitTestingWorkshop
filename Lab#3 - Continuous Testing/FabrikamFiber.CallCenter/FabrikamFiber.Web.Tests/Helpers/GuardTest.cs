@@ -5,46 +5,43 @@
     using System.Linq;
     using System.Text;
     using FabrikamFiber.Web.Helpers;
-    using NUnit.Framework;
+    using Xunit;
     using Guard = Web.Helpers.Guard;
 
-    [TestFixture]
     public class GuardTest
     {
-        [Test]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [Fact]
         public void ItShouldThrowExceptionIfArgumentIsNull()
         {
-            Guard.ThrowIfNull(null, "value");
+            Assert.Throws<ArgumentNullException>(() => Guard.ThrowIfNull(null, "value"));
         }
 
-        [Test]
+        [Fact]
         public void ItShouldNotThrowExceptionIfArgumentIsNotNull()
         {
             Guard.ThrowIfNull("this is not null", "value");
         }
 
-        [Test]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [Fact]
         public void ItShouldThrowExceptionIfArgumentIsNullOrEmpty()
         {
-            Guard.ThrowIfNullOrEmpty(string.Empty, "value");
+
+            Assert.Throws<ArgumentNullException>(() => Guard.ThrowIfNullOrEmpty(string.Empty, "value"));
         }
 
-        [Test]
+        [Fact]
         public void ItShouldNotThrowExceptionIfArgumentIsNotNullOrEmpty()
         {
             Guard.ThrowIfNullOrEmpty("not null or empty", "value");
         }
 
-        [Test]
-        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        [Fact]
         public void ItShouldThrowExceptionIfArgumentIsLesserThanZero()
         {
-            Guard.ThrowIfLesserThanZero(-1, "value");
+            Assert.Throws<ArgumentOutOfRangeException>(() => Guard.ThrowIfLesserThanZero(-1, "value"));
         }
 
-        [Test]
+        [Fact]
         public void ItShouldNotThrowExceptionIfArgumentIsNotLesserThanZero()
         {
             Guard.ThrowIfLesserThanZero(1, "value");
