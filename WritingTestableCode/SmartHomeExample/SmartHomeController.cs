@@ -7,9 +7,9 @@ namespace SmartHomeExample
 
         public DateTime LastMotionTime { get; private set; }
 
-        public SmartHomeController()  { }
+        public SmartHomeController(IDateTimeProvider dateTimeProvider)  { _dateTimeProvider = dateTimeProvider; }
               
-    
+
         #region bad API
         /**
          * What's wrong with this method?

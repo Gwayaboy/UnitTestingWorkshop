@@ -31,7 +31,7 @@
 
         protected void Application_Start()
         {
-            Database.SetInitializer<FabrikamFiberWebContext>(new FabrikamFiberDatabaseInitializer());
+            //Database.SetInitializer<FabrikamFiberWebContext>(new FabrikamFiberDatabaseInitializer());
 
             AreaRegistration.RegisterAllAreas();
 
