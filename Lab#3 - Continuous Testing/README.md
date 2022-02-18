@@ -124,7 +124,7 @@ In this task, you will learn about the unit testing story in Visual Studio 2019.
 3.  **Right-click** somewhere within the Test Explorer window and select **Group By | Project**.
     
     ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/022.png)
-    
+ <!--   
 4.  Grouping tests by project is useful for navigating and running tests at the project level.
     
     ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/023.png)
@@ -148,11 +148,11 @@ In this task, you will learn about the unit testing story in Visual Studio 2019.
 10.  With the coded UI tests categorized appropriately, it is now easy to select and run just the UI tests if desired.
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/027.png)
-    
+
 11.  You can also create sets of tests called **playlists**. This provides custom grouping without the need to modify your unit testing code. **Right-click** the _**CodedUITestMethod1**_ test and select **Add to Playlist | New Playlist**.
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/028.png)
-    
+
 12.  Enter “**UI Tests**” for the playlist file name and then click **Save**.
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/029.png)
@@ -164,7 +164,7 @@ In this task, you will learn about the unit testing story in Visual Studio 2019.
 14.  With just the “UI Tests” playlist selected, you will only see those specific tests shown in Test Explorer, making it much easier to focus on a particular selection of tests.
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/031.png)
-    
+  
 15.  Test playlists are simple XML files that define the individual tests to include. For example, here is what the “UI Tests” XML looks like (loaded in Visual Studio editor).
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/032.png)
@@ -172,12 +172,12 @@ In this task, you will learn about the unit testing story in Visual Studio 2019.
 16.  Playlists can be shared with team members via a team website, emailed, and even added to source control if desired. To load a playlist file, you would select the **Playlist** drop-down and then select the **Open Playlist File** option. You do not need to do this for this lab.
     
         ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/033.png)
-    
+              -->
 
 ### Task 3: Code Coverage
 
 In this task, you will learn about code coverage features that make it easier to use and integrate into the development cycle.
-
+<!--
 1.  Return to **CodedUITest1.cs** and comment out the **CodedUITest** attribute on the class. We won’t be using that test for this part of the lab.
     
     ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/034.png)
@@ -185,8 +185,9 @@ In this task, you will learn about code coverage features that make it easier to
 2.  In **Test Explorer**, Return to the default playlist that includes all tests by selecting the **Playlist** drop-down and then selecting the **All Tests** option.
     
     ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/035.png)
-    
-3.  To analyze code coverage for all tests, select the **Run** drop-down and then select the **Analyze Code Coverage for All Tests** option. This will initiate the process of building, testing, and gathering code coverage results.
+
+3.-->
+1.  To analyze code coverage for all tests, select the **Run** drop-down and then select the **Analyze Code Coverage for All Tests** option. This will initiate the process of building, testing, and gathering code coverage results.
     
     ![](https://azuredevopslabs.com/labs/devopsserver/liveunittesting/images/036.png)
     
