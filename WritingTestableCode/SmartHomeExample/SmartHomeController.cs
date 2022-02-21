@@ -53,7 +53,7 @@ namespace SmartHomeExample
 
         #region improved API
 
-        public TimeOfDay GetTimeOfDay(DateTime dateTime)
+        public virtual TimeOfDay GetTimeOfDay(DateTime dateTime)
         {
             if (dateTime.Hour >= 0 && dateTime.Hour < 6)
             {

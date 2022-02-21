@@ -57,14 +57,13 @@ namespace SmartHomeExample.Tests
             bool turnedOn = false;
             Action turnOn = () => turnedOn = true;
             Action turnOff = () => turnedOn = false;
-            SmartHomeController sut = null;
-            //sut = new SmartHomeController(new FakeDateTimeProvider(23, 59, 59));
+            SmartHomeController sut = new SmartHomeController(new FakeDateTimeProvider(23, 59, 59));
 
             // Act
             sut.ActuateLights(true, turnOn, turnOff);
 
             // Assert
-            Assert.IsTrue(turnedOn);
+            Assert.IsTrue(turnedOn, "Expected the lights to be turned on but was off");
         }
 
     }
