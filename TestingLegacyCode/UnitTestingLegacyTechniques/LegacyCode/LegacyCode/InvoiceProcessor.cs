@@ -4,7 +4,7 @@ namespace LegacyCode
 {
     public class InvoiceProcessor
     {
-        public void SendInvoiceLegacy()
+        public void SendInvoice()
         {
             
             
