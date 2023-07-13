@@ -11,6 +11,7 @@ namespace TestDoubles
         private readonly IDeviceFirmwareFetcher _deviceFirmwareFetcher;
         private readonly IDateTimeProvider _dateTimeProvider;
 
+
         public DeviceController(IDeviceRepository deviceRepository, 
                                 IDeviceFirmwareFetcher deviceFirmwareFetcher,
                                 IDateTimeProvider dateTimeProvider)

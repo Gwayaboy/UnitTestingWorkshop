@@ -4,7 +4,7 @@ using TestDoubles.Domain;
 
 namespace TestDoubles.Interfaces
 {
-    public interface IDeviceRepository : IDisposable
+    public interface IDeviceRepository 
     {
         IEnumerable<Device> AllDevices { get; }
     }
